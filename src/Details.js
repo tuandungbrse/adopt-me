@@ -1,5 +1,6 @@
 import React from 'react';
 import pet from '@frontendmasters/pet';
+import Carousel from './Carousel';
 export default class Details extends React.Component {
   // constructor(props) {
   //   super(props);
@@ -36,6 +37,7 @@ export default class Details extends React.Component {
 
     return (
       <div className="details">
+        <Carousel media={media} />
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} — ${breed} — ${location}`}</h2>
