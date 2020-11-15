@@ -24,7 +24,7 @@ export default class Details extends React.Component {
           loading: false
         });
       })
-      .catch((err) => this.setState({ error: err }));
+      .catch(err => this.setState({ error: err }));
   }
 
   render() {
